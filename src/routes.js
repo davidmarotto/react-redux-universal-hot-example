@@ -37,6 +37,13 @@ export default (store) => {
       { /* Routes */ }
       <Route path="operatorRegistration" component={OperatorRegistration}/>
 
+      { /* Routes requiring login 
+      <Route onEnter={requireLogin}>
+        <Route path="chat" component={Chat}/>
+        <Route path="loginSuccess" component={LoginSuccess}/>
+      </Route>
+      */ }
+
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Route>
